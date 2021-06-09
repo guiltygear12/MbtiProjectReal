@@ -394,12 +394,7 @@
                 }
                 result(mbti);
                 $('.question').hide();
-                $('.result').show();
-                alert(mbti);
-                
-            }
-            function mbti_point(){
-                
+                $('.result').show();          
             }
         var question={
             1:{"quest":"1번 질문을 넣는 공간 입니다.","type":"EI","A":"1답변A가 들어가야되는 위치입니다.","B":"답변B가 들아가야되는 위치 입니다."},
@@ -417,7 +412,6 @@
         }
         // 결과 화면
         function result(mbti){
-            alert(mbti);
             $('.result_title').html(mbti);
             $('.result_img').attr("src",mbti_result[mbti]["img"]);
             $('.result_subtitle').html(mbti_result[mbti]["exp"]);
