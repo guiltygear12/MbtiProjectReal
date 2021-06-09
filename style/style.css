@@ -1,0 +1,227 @@
+*{
+    font-family:'NanumGothic';
+}
+/* 시작메뉴화면 */
+body{
+    background-color: #f5fffd;
+    color: #0D4459;
+    max-width: 1000px;
+    border-left: #0D4459 5px solid;
+    border-right: #0D4459 5px solid;
+}
+.main-title{
+    font-size: 50px;
+}
+
+.start{
+    margin-top: 100px;
+}
+.start-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-start{
+    font-size: 20px;
+    background-color: #E7624F;
+    border: none;
+    color: #ffffff;
+    transition: all .5s;
+    margin: 0 auto;
+}
+.btn-start:hover{
+    font-size: 30px;
+    background-color: #FFF447;
+    color: #1A1A1A;
+    font-weight: bold;
+}
+/* mbti설명 스크린*/
+
+.mbtiList{
+    display: none;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.list_wrap{
+    margin: 0 auto;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+ul>li{
+    display: inline-block;
+}
+ul>li{
+    display: block;
+    text-decoration: none;
+    margin: 5px;
+}
+
+ul>li .box{
+    border: #0D4459 solid 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    min-width: 200px;
+    height: 200px;
+    transition: all .5s;
+    cursor:pointer
+}
+.analysts{
+    background-color: rgb(255, 217, 249);
+}
+.diplomats{
+    background-color: rgb(208, 255, 146);
+}
+.sentinels{
+    background-color: rgb(53, 225, 255);
+}
+.explorers{
+    background-color: rgb(255, 190, 50);
+}
+ul>li .box .mbti_title{
+    position: absolute;
+    top: 150%;
+    left: 20px;
+    z-index: 2;
+    color:rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+ul>li .box img{
+    width: 170px;
+    position: absolute;
+    bottom: 150%;
+    right: -20px;
+    z-index: 2;
+    color:#fff;
+    transition: all 0.7s;
+}
+ul>li h3{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    color: #666;
+}
+/* mbti목록호버효과  */
+ul>li:hover .mbti_title{
+    top: 52%;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+ul>li:hover img{
+    bottom: 10%;
+}
+.mbti_item{
+    color: #141414;
+    font-size: 24px;
+}
+/* 모달 윈도우 */
+.modal{ 
+    position:fixed; 
+    width:100%; 
+    height:100%; 
+    background: rgba(0,0,0,0.8); 
+    top:0; left:0; 
+    z-index: 10;
+    display: none;
+    color: #1A1A1A;
+    min-height: 1600px;
+}
+.modal_content{
+    border: #0D4459 solid 10px;
+    max-width: 700px;
+    min-width: 300px;
+    background-color: #fff;
+    margin: auto;
+    /* margin-top: 200px; */
+    text-align: center;
+}
+.modal_mbti{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.modal_mbti_img{
+    width: 80%;
+    border: #0D4459 7px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+.modal_mbti_exp{
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.modal_mbti_info{
+    font-size: 16px;
+    padding: 0 40px
+}
+/* 문제구역 */
+.question{
+    display: none;
+}
+.question_header{
+    margin-top: 50px;
+}
+.quest{
+    margin-bottom: 30px;
+}
+.answer_area{
+    margin: 100px auto;
+    text-align: center;
+    cursor: pointer;
+}
+.answer{
+    background-color:#0D4459;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    transition: all .3s;
+    font-weight: bold;
+    font-size: 16px;
+    height: 200px;
+    text-align: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+.answer:hover{
+    background-color: #FFF447;
+    max-width: 700px;
+    color: #141414;
+}
+#A{
+    border-bottom: #000000 3px solid;
+    border-top: #000000 3px solid;
+}
+#B{
+    border-top: #000000 3px solid;
+    border-bottom: #000000 3px solid;
+}
+/* 결과화면 */
+.result{
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+}
+.result_title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.result_img{
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.result_subtitle{
+    margin-bottom: 30px;
+}
+.result_txt{
+    padding: 50px 30px;
+}
