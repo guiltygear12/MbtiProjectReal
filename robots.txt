@@ -1,6 +1,2 @@
-User-agent: Yeti
-Allow: /
-
 User-agent: *
-Allow:/
-Sitemap:https://celebrity-mbti-test.netlify.app/sitemap.xml
+Disallow:
